@@ -1,0 +1,24 @@
+/* Branded wp-login.php (password reset, fallback sign-in). */
+body.login {
+	background: radial-gradient(1000px 520px at 10% -10%, rgba(45, 212, 168, .18), transparent 60%),
+		radial-gradient(800px 520px at 110% 110%, rgba(91, 108, 245, .2), transparent 60%), #0d0e10;
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+#login { width: 360px; max-width: calc(100vw - 32px); padding-top: 8vh; }
+#login h1 a { background-size: contain; background-position: center; width: 200px; height: 180px; margin-bottom: 18px; }
+.login form { background: #15171a; border: 1px solid #272b31; border-radius: 14px; box-shadow: 0 24px 60px rgba(0, 0, 0, .5); padding: 26px 24px; }
+.login label { color: #c9ced5; font-weight: 500; }
+.login form .input, .login input[type=text], .login input[type=password], .login input[type=email] {
+	background: #1a1d21; border: 1px solid #363b43; color: #e9ebee; border-radius: 8px; font-size: 15px; padding: 6px 10px; box-shadow: none;
+}
+.login form .input:focus { border-color: #2dd4a8; box-shadow: 0 0 0 3px rgba(45, 212, 168, .35); }
+.wp-core-ui .button-primary {
+	background: linear-gradient(135deg, #2dd4a8, #3b9fd1 55%, #5b6cf5); border: 0; border-radius: 8px; font-weight: 600; text-shadow: none; box-shadow: none; min-height: 36px; padding: 0 16px;
+}
+.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus { background: linear-gradient(135deg, #2dd4a8, #3b9fd1 55%, #5b6cf5); filter: brightness(1.06); }
+.login #nav a, .login #backtoblog a, .login .privacy-policy-link { color: #8f97a3 !important; }
+.login #nav a:hover, .login #backtoblog a:hover { color: #5eead4 !important; }
+.login .message, .login .notice, .login .success { background: #1a1d21; color: #e9ebee; border-left-color: #2dd4a8; border-radius: 8px; }
+.login #login_error { background: #1a1d21; color: #fca5a5; border-left-color: #f87171; border-radius: 8px; }
+.login .button.wp-hide-pw .dashicons { color: #8f97a3; }
+.language-switcher { display: none; }
